@@ -43,10 +43,11 @@ public class Endpoint {
     }
 
     @DeleteMapping
-    public String deleteInformations(){
+    public String deleteInformations(@RequestBody int id){
         if (p1 == null){
             return "O produto não foi encontrado.";
         }
+        p1.setIdProduto(id);
         c1.getBanco().delete(p1.getIdProduto());
         return "Deletado com sucesso!";
     }
