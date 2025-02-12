@@ -1,6 +1,9 @@
 package com.senai.demo.controller;
 
 import com.senai.demo.database.BancoDeProdutos;
+import com.senai.demo.model.Produto;
+
+import java.util.List;
 
 public class Controlador {
     private BancoDeProdutos banco = new BancoDeProdutos();
@@ -8,16 +11,20 @@ public class Controlador {
     public Controlador() {
     }
 
-    public Controlador(BancoDeProdutos banco) {
-        this.banco = banco;
+
+    public List<Produto> listarProdutos() {
+        return banco.findAll();
     }
 
-    public BancoDeProdutos getBanco() {
-        return banco;
+    public void postarProdutos(Produto produto) {
+        banco.insert(produto);
     }
 
-    public void setBanco(BancoDeProdutos banco) {
-        this.banco = banco;
+    public void atualizarProduto(Produto produto) {
+        banco.update(produto);
     }
 
+    public void deletarProduto(int id) {
+        banco.delete(id);
+    }
 }
