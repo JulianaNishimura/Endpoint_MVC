@@ -42,4 +42,10 @@ public class Endpoint {
 //        return "Deletado com sucesso!";
 //    }
 
+//    mais usual com url - ver na documentação; exemplo(?):
+//    @GetMapping("/owners/{ownerId}/pets/{petId}")
+//    public Pet findPet(@PathVariable Long ownerId, @PathVariable Long petId) {
+//        // ...
+//    }
+
 }
