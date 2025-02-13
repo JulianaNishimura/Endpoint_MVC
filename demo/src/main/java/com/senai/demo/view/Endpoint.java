@@ -35,6 +35,12 @@ public class Endpoint {
         return "Deletado com sucesso!";
     }
 
-    
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<Void> deleteInformations(@PathVariable int id){
+//        c1.deletarProduto(id);
+//        return ResponseEntity.noContent().build();
+//    }
+
+
 
 }
