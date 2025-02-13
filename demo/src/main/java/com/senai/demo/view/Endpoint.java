@@ -10,7 +10,6 @@ import java.util.List;
 @RequestMapping("/produto")
 public class Endpoint {
 
-    public Produto p1;
     public Controlador c1 = new Controlador();
 
     @GetMapping
@@ -36,16 +35,6 @@ public class Endpoint {
         return "Deletado com sucesso!";
     }
 
-//    @DeleteMapping
-//    public String deleteInformations(@RequestBody Produto produto){
-//        c1.deletarProduto(produto.getId());
-//        return "Deletado com sucesso!";
-//    }
-
-//    mais usual com url - ver na documentação; exemplo(?):
-//    @GetMapping("/owners/{ownerId}/pets/{petId}")
-//    public Pet findPet(@PathVariable Long ownerId, @PathVariable Long petId) {
-//        // ...
-//    }
+    
 
 }

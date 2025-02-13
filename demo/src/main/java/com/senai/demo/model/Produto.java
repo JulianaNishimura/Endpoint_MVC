@@ -74,15 +74,4 @@ public class Produto {
         System.out.println("Ponto de Venda: " + pontoDeVenda);
     }
 
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "idProduto=" + idProduto +
-                ", nomeProduto='" + nomeProduto + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", preco=" + preco +
-                ", quantidade=" + quantidade +
-                ", pontoDeVenda='" + pontoDeVenda + '\'' +
-                '}';
-    }
 }
