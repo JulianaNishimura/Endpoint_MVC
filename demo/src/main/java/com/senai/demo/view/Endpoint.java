@@ -32,8 +32,8 @@ public class Endpoint {
         }
     }
 
-    @DeleteMapping
-    public String deleteInformations(@RequestBody Integer id){
+    @DeleteMapping("/{id}")
+    public String deleteInformations(@RequestParam Integer id){
         if(c1.deletarProduto(id)){
             return "Deletado com sucesso!";
         } else {
