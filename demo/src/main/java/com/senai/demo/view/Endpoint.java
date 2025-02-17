@@ -25,8 +25,11 @@ public class Endpoint {
 
     @PutMapping
     public String putInformations(@RequestBody Produto produto){
-        c1.atualizarProduto(produto);
-        return "Produto atualizado com sucesso!";
+        if(c1.atualizarProduto(produto)){
+            return "Produto atualizado com sucesso!";
+        } else {
+            return "Falha ao atualizar produto...";
+        }
     }
 
     @DeleteMapping

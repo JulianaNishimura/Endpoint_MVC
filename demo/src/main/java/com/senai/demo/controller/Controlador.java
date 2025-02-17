@@ -20,8 +20,8 @@ public class Controlador {
         banco.insert(produto);
     }
 
-    public void atualizarProduto(Produto produto) {
-        banco.update(produto);
+    public boolean atualizarProduto(Produto produto) {
+        return banco.update(produto);
     }
 
     public boolean deletarProduto(Integer id) {
