@@ -30,7 +30,7 @@ public class Endpoint {
     }
 
     @DeleteMapping
-    public String deleteInformations(@RequestBody int id){
+    public String deleteInformations(@RequestBody Integer id){
         if(c1.deletarProduto(id)){
             return "Deletado com sucesso!";
         } else {

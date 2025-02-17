@@ -24,7 +24,7 @@ public class Controlador {
         banco.update(produto);
     }
 
-    public boolean deletarProduto(int id) {
+    public boolean deletarProduto(Integer id) {
         return banco.delete(id);
     }
 }
